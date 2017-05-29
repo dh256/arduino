@@ -1,7 +1,7 @@
-# Arduino
-Arduino sketch files and associated circuit diagrams
+# Arduino Sketches
+Arduino UNO examples with sketch files and circuit diagrams.
 
-## blinking_led_light
+## Blinking LED Light
   Make a LED light blink every x miliseconds
   
   Circuit Picture:
@@ -10,7 +10,7 @@ Arduino sketch files and associated circuit diagrams
   Notes:
   - Resistor: 220 Ohms
   
-## traffic_light
+## Traffic Lights
   A traffic light sequence. User can enter "U" for UK and "O" for other country.
   
   Circuit Picture:
@@ -19,7 +19,8 @@ Arduino sketch files and associated circuit diagrams
   Notes:
   - Each LED should be protected with an appropriate resistor (not shown here for simplicity)
 
-## ethernet
+## Ethernet Shield
+
 Initialise ethernet connection and display IP address details obtained from DHCP
 
 Circuit Picture:
@@ -32,3 +33,13 @@ Notes:
 - Upload ethernet.ino and connect a serial monitor
 - Board will connect to Ethernet and display IP address (Note: getting an IP address can take some time)
 - For full details see: https://www.arduino.cc/en/Reference/Ethernet 
+
+## Using a LCD 
+
+Sketch displays a string read from the serial port on first line of LCD (scrolling if necessary). On second line the number of seconds the program has been running for is displayed.
+
+Circuit Picture:
+  ![LCD Display](circuits/lcd_circuit.jpg)
+
+Notes:
+- The Potentiometer is used to control the contrast of the LCD.
