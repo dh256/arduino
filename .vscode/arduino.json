@@ -1,7 +1,0 @@
-{
-    "sketch": "traffic_lights/traffic_lights.ino",
-    "port": "/dev/cu.usbmodemFD131",
-    "board": "arduino:avr:uno",
-    "output": null,
-    "_debugger": null
-}
