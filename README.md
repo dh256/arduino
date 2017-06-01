@@ -42,4 +42,20 @@ Circuit Picture:
   ![LCD Display](circuits/lcd_circuit.jpg)
 
 Notes:
-- The Potentiometer is used to control the contrast of the LCD.
+
+- Hardware: Uno, Uno compatible LCD, Breadboard, connector wires, 10K Potentiometer
+- The Potentiometer is used to control the contrast of the LCD
+- See Sketch comments for instructions on running program
+
+## Temperature and Humidity 
+
+Sketch displays the current tempeature and humidity on a LCD.
+
+Button used to change temperature bto Farhaneit (F) (when pressed).
+
+Circuit Picture:
+![Temperature and Humidity](circuits/temphumidity.jpg)
+
+Notes:
+- Example uses a Adafruit compatible DHT11 sensor. For more information on DHT11 see: https://learn.adafruit.com/dht/overview 
+- Builds on the "Using a LCD" sketch above

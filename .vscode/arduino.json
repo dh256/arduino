@@ -1,0 +1,7 @@
+{
+    "port": "/dev/cu.usbmodemFD131",
+    "board": "arduino:avr:uno",
+    "output": null,
+    "_debugger": null,
+    "sketch": "temperature_humidity/temperature_humidity.ino"
+}
