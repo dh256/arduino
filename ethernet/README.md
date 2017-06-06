@@ -3,7 +3,7 @@
 Initialise ethernet connection and display IP address details obtained from DHCP.
 
 Circuit Picture:
-  ![Ethernet Shield](../circuits/EthernetShield.jpg)
+  ![Ethernet Shield](Ethernet.jpg)
 
 Notes:
 - Connect Uno Ethernet Shield (or equivalent) to Uno board. Take care when connecting shield not to bend pins and to ensure all Pins are connected correctly.

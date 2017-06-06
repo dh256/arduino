@@ -1,8 +1,10 @@
-## Traffic Lights
-  A traffic light sequence. User can enter "U" for UK and "O" for other country.
+# Traffic Lights
+  A traffic light sequence. 
+  
+  User can send "U" for UK or "O" for other country in through Serial Manager to show different sequences.
   
   Circuit Picture:
-    ![Traffic Lights Circuit](../circuits/TrafficLights.jpg)
+    ![Traffic Lights Circuit](TrafficLights.jpg)
   
   Notes:
-  - Each LED should be protected with an appropriate resistor (not shown here for simplicity)
+  - Each LED should be protected with an appropriate resistor (220 Ohms). Not shown in circuit picture for simplicity.
