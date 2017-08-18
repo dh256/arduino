@@ -3,7 +3,7 @@
 Sketch displays a string read from the serial port on first line of LCD (scrolling if necessary). On second line the number of seconds the program has been running for is displayed.
 
 Circuit Picture:
-  ![LCD Display](lcd_circuit.jpg)
+  ![Circuit Diagram](UnoLCDDisplayCircuit.png)
 
 Notes:
 
