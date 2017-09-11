@@ -1,0 +1,5 @@
+{
+    "sketch": "temperature_humidity_expanded.ino",
+    "board": "arduino:avr:uno",
+    "port": "/dev/cu.usbmodemFA1331"
+}
