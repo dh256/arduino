@@ -30,9 +30,6 @@
 #define LOW_TEMP 18.5
 #define HIGH_TEMP 21.0
 
-// switch settings
-#define SWITCH_PIN 3
-
 // DHT sensor settings
 #define DHT_PIN 2
 #define DHT_TYPE DHT22
@@ -47,8 +44,6 @@ DHT dht(DHT_PIN, DHT_TYPE);                                            // initia
 
 // code runs once
 void setup() {
-    Serial.begin(9600);
-    //pinMode(SWITCH_PIN, INPUT_PULLUP); // set switch to pullup mode
     pinMode(GREEN_LED_PIN, OUTPUT);
     pinMode(RED_LED_PIN, OUTPUT);
     pinMode(BLUE_LED_PIN, OUTPUT);
@@ -63,16 +58,6 @@ void setup() {
 void loop() {
   // wait at least two second between readings (as per sensor spec)
   delay(2000);
-
-  // determine whether C or F
-  /*
-  if(digitalRead(SWITCH_PIN) == HIGH) {
-    units = 'C';
-  }
-  else {
-    units = 'F';
-  }
-  */
 
   // get humidity and temparature
   humidity = dht.readHumidity();
@@ -103,9 +88,6 @@ void display() {
   lcd.print(temperatureStr);
   lcd.setCursor(0,1);
   lcd.print(humidityStr);
-
-  Serial.print(temperatureStr);
-  Serial.print(humidityStr);
 }
 
 void tempLedIndicator() {
@@ -127,14 +109,16 @@ void tempLedIndicator() {
 }
 
 void testLeds() {
-  digitalWrite(GREEN_LED_PIN, HIGH);
-  delay(BLINK_DELAY);
-  digitalWrite(GREEN_LED_PIN, LOW);
-  digitalWrite(RED_LED_PIN, HIGH);
-  delay(BLINK_DELAY);
-  digitalWrite(RED_LED_PIN, LOW);
-  digitalWrite(BLUE_LED_PIN, HIGH);
-  delay(BLINK_DELAY);
-  digitalWrite(BLUE_LED_PIN, LOW);
+  for(int count = 0; count < 2; count++) {
+    digitalWrite(GREEN_LED_PIN, HIGH);
+    delay(BLINK_DELAY);
+    digitalWrite(GREEN_LED_PIN, LOW);
+    digitalWrite(RED_LED_PIN, HIGH);
+    delay(BLINK_DELAY);
+    digitalWrite(RED_LED_PIN, LOW);
+    digitalWrite(BLUE_LED_PIN, HIGH);
+    delay(BLINK_DELAY);
+    digitalWrite(BLUE_LED_PIN, LOW);
+  }
 }
 
